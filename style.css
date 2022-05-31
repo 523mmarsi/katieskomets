@@ -24,6 +24,7 @@ body {
   min-height: 400px;
   margin-bottom: 100px;
   clear: both;
+  background-color: #d9d9d9;
 }
 
 .carousel {
@@ -47,33 +48,40 @@ hr {
   margin: 0%;
   padding: 0%;
 }
+.d-block {
+  height: 400px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #e30503;
+}
 
 #image {
   max-width: 545px;
   min-width: 200px;
 }
 
+h1 {
+  border-bottom: solid 1px blue;
+  font-family: ;
+}
+
 .row {
   justify-content: center;
-  border: solid 1px blue;
 }
 .col-md-5 {
-  border: solid 1px blue;
   justify-content: center;
   text-align: center;
 }
 .col-md-7 {
-  border: solid 1px blue;
   justify-content: center;
   text-align: center;
 }
 .col-md-6 {
-  border: solid 1px blue;
   justify-content: center;
   text-align: center;
 }
 .col-sm-4 {
-  border: solid 1px blue;
   justify-content: center;
   text-align: center;
 }
