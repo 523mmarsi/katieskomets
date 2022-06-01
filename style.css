@@ -41,7 +41,7 @@ body {
 }
 
 hr {
-  border-top: 1px solid black;
+  border-top: 1px solid blue;
 }
 
 .jumbotron {
@@ -55,13 +55,27 @@ hr {
 .carousel-control-next-icon {
   background-color: #e30503;
 }
-
-#image {
-  max-width: 545px;
-  min-width: 200px;
+.sponsor-break {
+  border-top: 1px solid blue;
+  max-width: 40%;
 }
-
-h1 {
+#button {
+  background-color: #e30503;
+  font-size: 16px;
+  border: none;
+}
+#image {
+  max-width: 100%;
+  min-width: 25%;
+}
+#logo {
+  max-width: 100%;
+  min-width: 25%;
+  max-height: 50%;
+  min-height: 25%;
+}
+h1,
+h2 {
   border-bottom: solid 1px blue;
   font-family: ;
 }
