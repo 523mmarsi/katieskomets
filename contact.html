@@ -19,7 +19,7 @@
       <div class="container-fluid">
       <!--jumbotron with image of logo-->
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 px-0">
         <div class="jumbotron jumbotron-fluid">
           <div class="container mx-0 px-0" style="width: 200px;">  
             <img src="https://i.imgur.com/2ZP3gvz.png" alt="Katie's Komets logo">
@@ -48,58 +48,85 @@
                 </ul>
               </div>
             </nav>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="card">
+
+
+            <div class="row m-3">
+              <div class="col-sm-6 mt-1">
+                <div id="adress" class="card p-4">
                   <div class="card-body">
+                    <center>
                     <h5 class="card-title">Located at...</h5>
+                    </center>
                     <p class="card-text">Carousel House                  (Katie's Komets Practices) <br> 4300 Avenue of the Republic <br> Philadelphia, PA 19131
                     </p>
-                    <a href="https://www.google.com/maps/place/4300+Avenue+of+the+Republic,+Philadelphia,+PA+19131/@39.9796479,-75.2124514,3a,75y,220.97h,90t/data=!3m6!1e1!3m4!1std06KURQ1uaLbW6aQX1Xsw!2e0!7i16384!8i8192!4m5!3m4!1s0x89c6c711d8dbfe51:0xa04239d764087bd8!8m2!3d39.9791417!4d-75.2130364" class="btn btn-primary">
+                    <a id="map-btn" href="https://www.google.com/maps/place/4300+Avenue+of+the+Republic,+Philadelphia,+PA+19131/@39.9796479,-75.2124514,3a,75y,220.97h,90t/data=!3m6!1e1!3m4!1std06KURQ1uaLbW6aQX1Xsw!2e0!7i16384!8i8192!4m5!3m4!1s0x89c6c711d8dbfe51:0xa04239d764087bd8!8m2!3d39.9791417!4d-75.2130364" class="btn btn-primary">
                       Google maps
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-6 mt-1">
                 <div class="card">
                   <div class="card-body">
+                    <center>
                     <h5 class="card-title">Call us!</h5>
-                    <p class="card-text">Team Representative</p>
+                    </center>
+                    <p class="card-text">Team Representative:</p>
                     <p class="card-text">267-688-7230</p>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Social Media</h5>
-                    <p class="card-text">
-
-                    <a href="#" class="fa fa-instagram  btn btn-primary"> Instagram</a>
-                    <a href="https://www.facebook.com/KatiesKomets/" class="fa fa-facebook btn btn-primary"> Facebook</a>
-                    <a href="https://twitter.com/KatieskometsPA" class="fa fa-twitter btn btn-primary"> Twitter</a>
-                    </p>
+                  <div class="card mt-1">
+                    <div class="card-body">
+                      <center>
+                      <h5 class="card-title">Social Media</h5>
+                      <p class="card-text">
+                      </center>
+                      <a href="https://instagram.com/katieskomets?igshid=YmMyMTA2M2Y=" class="fa fa-instagram  btn btn-primary"> Instagram</a>
+                      <a href="https://www.facebook.com/KatiesKomets/" class="fa fa-facebook btn btn-primary"> Facebook</a>
+                      <a href="https://twitter.com/KatieskometsPA" class="fa fa-twitter btn btn-primary"> Twitter</a>
+                      </p>
+                    </div>
                   </div>
-                </div>
               </div>
+              
             </div>
             <div class="row">
               <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-body">\
+                  <div class="card-body">
                     <center>
                     <h5 class="card-title">Send us an email</h5>
-                    <p class="card-text">fill out this form</p>
-                    <a href="#" class="btn btn-primary">form with email, phone, name, message, etc.</a>
+                    
+                    <main role="main">
+                      <div class="contentWrapper">
+                        <form action="" method="post" name="signUpForm" id="signUpForm">
+                          <fieldset id="signUp">
+                            <center>
+                              <label for="nameField">Name:</label>
+                              <input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onFocus="clearName();" onBlur="resetName">
+                              <br>
+                              <label for="phoneField">Phone:</label>
+                              <input id="phoneField" name="phoneField" type="text" class="textfield" value="example: 212-123-1234" onFocus="clearPhone();" onBlur="resetPhone">
+                              <br>
+                              <label for="emailField">Email:</label>
+                              <input id="emailField" name="emailField" type="text" class="textfield" value="example: blahblahblah@gmail.com" onFocus="clearEmail();" onBlur="resetEmail">
+                              <br>
+                              <input id="submit" type="submit" name="submit" value="Send Email">
+                            </center>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </main>
+
+
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col-sm-12">
                   <div class="card">
-                    <div class="card-body">\
+                    <div class="card-body">
                       <center>
                       <h5 class="card-title">Donate</h5>
                       <p class="card-text">fill out this form</p>
@@ -128,4 +155,5 @@
         </div>
       </div>
     </body>   
+    <script src="script.js"></script>
   </html>
